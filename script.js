@@ -1,5 +1,10 @@
-//DISPLAY CURRENT PC TIME
-$("#currenttime").text(moment().format("Do MMMM YYYY, h:mm:ss a"));
+
+//SETTING OF CURRENT PC'S TIME
+$("#currentDay").text(day);
+
+$("#currentDate").text(date);
+
+$("#currentTime").text(time);
 
 //GENERATE BLOCKS OF TIME
 
@@ -28,8 +33,9 @@ else if (blockhour === currenthour){
     $(this).removeClass('present');
     $(this).removeClass('past');
     $(this).addClass('future');
-}
+    }
 
 });
 
 }
+hour();

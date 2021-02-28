@@ -1,12 +1,10 @@
 $(document).ready(function () {
-  var timeBlocks = $(".container");
 
   var timeDisplay = moment().format("MMMM Do YYYY hh:mm:ss");
 
   var timeDiv = $("#currentTime");
   timeDiv.append(timeDisplay);
   //GENERATE BLOCKS OF TIME
-  //COLOR CODE DAY BASED ON PAST,PRESENT,FUTURE
   //WHEN PAGE REFRESH USER DATA REMAINS SAVED LOCALLY
 
   //WHEN PAGE REFRESH USER DATA REMAINS SAVED LOCALLY
@@ -17,6 +15,7 @@ $(document).ready(function () {
   });
   function hour() {
     let currenthour = moment().hours();
+
 
     //COLOR CODE DAY BASED ON PAST,PRESENT,FUTURE
     $(".time-block").each(function () {
